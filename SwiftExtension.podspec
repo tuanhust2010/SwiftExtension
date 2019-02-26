@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Pod::Spec.new do |s|
 s.name = 'SwiftExtension'
 s.version = '0.1.1'
