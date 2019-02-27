@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIImageView {
+public extension UIImageView {
     func setImageWithText(_ text: String, color: UIColor?, size: CGFloat = 17) {
         let index = text.index(after: text.startIndex)
         let character = String(text.uppercased()[..<index])

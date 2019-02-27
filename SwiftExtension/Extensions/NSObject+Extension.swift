@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSObject {
+public extension NSObject {
     class var className: String {
         return String(describing: self).components(separatedBy: ".").last!
     }

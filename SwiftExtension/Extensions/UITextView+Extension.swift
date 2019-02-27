@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITextView: UITextViewDelegate {
+public extension UITextView {
     /// Resize the placeholder when the UITextView bounds change
     override open var bounds: CGRect {
         didSet {
@@ -34,12 +34,6 @@ extension UITextView: UITextViewDelegate {
             } else {
                 self.addPlaceholder(newValue!)
             }
-        }
-    }
-    
-    private func textViewDidChange() {
-        if let placeholderLabel = self.viewWithTag(100) as? UILabel {
-            placeholderLabel.isHidden = !self.text.isEmpty
         }
     }
     
@@ -72,3 +66,13 @@ extension UITextView: UITextViewDelegate {
         self.resizePlaceholder()
     }
 }
+
+extension UITextView: UITextViewDelegate {
+    private func textViewDidChange() {
+        if let placeholderLabel = self.viewWithTag(100) as? UILabel {
+            placeholderLabel.isHidden = !self.text.isEmpty
+        }
+    }
+}
+
+

@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UICollectionView {
+public extension UICollectionView {
     func register<T: UICollectionViewCell>(_ aClass: T.Type) {
         let name = String(describing: aClass)
         let bundle = Bundle.main

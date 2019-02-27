@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 Pod::Spec.new do |s|
-s.name = 'SwiftExtension'
+s.name = 'SwiftExtensionPlus'
 s.version = '0.1.1'
 s.summary = 'The Extension Library'
 s.description = <<-DESC

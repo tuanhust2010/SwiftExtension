@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIDevice {
+public extension UIDevice {
     var iPhoneX: Bool {
         if #available(iOS 11.0, *) {
             return UIApplication.shared.delegate?.window??.safeAreaInsets.bottom ?? 0 > 0

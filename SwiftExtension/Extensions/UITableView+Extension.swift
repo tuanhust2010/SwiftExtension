@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
     func register<T: UITableViewCell>(_ aClass: T.Type) {
         let name = String(describing: aClass)
         let bundle = Bundle.main

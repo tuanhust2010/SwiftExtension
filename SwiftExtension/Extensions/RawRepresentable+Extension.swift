@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension RawRepresentable where Self: Hashable {
+public extension RawRepresentable where Self: Hashable {
     
     private static func iterateEnum<T: Hashable>(_: T.Type) -> AnyIterator<T> {
         var index = 0
